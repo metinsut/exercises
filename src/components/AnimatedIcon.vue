@@ -3,7 +3,7 @@
     <v-header></v-header>
       <div class="wrapper">
         <div class="icons">
-          <div id="nav-icon1">
+          <div id="nav-icon1" v-bind:class="{open:isActive}" v-on:click="run">
             <span></span>
             <span></span>
             <span></span>
@@ -29,7 +29,13 @@ export default {
   components: {'v-header':header},
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      isActive:false,
+    }
+  },
+  methods:{
+    run() {
+      this.isActive = !this.isActive;
     }
   }
 }
@@ -37,20 +43,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-.wrapper{
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: rgba(236, 240, 241,0.5);
-  display: flex;
-  flex-direction: column;
-  :nth-child(odd){
-    background-color: rgba(189, 195, 199,1.0);
-  }
-  :nth-child(n){
-    flex: 1;
-    height: 400px;
-  }
-}
+@import "../assets/common/common";
 
 #nav-icon1 {
   width: 60px;
@@ -58,9 +51,12 @@ export default {
   position: relative;
   background-color: rgba(221, 109, 54,1.0);
   margin: 50px auto;
-  transform: rotate(0deg);
   transition: 0.5s ease-in-out;
   cursor: pointer;
+  &.open span:nth-child(2) {
+    width: 50%;
+    left: 30px;
+  }
   span {
     display: block;
     position: absolute;
@@ -69,14 +65,14 @@ export default {
     background-color: rgba(52, 73, 94,1.0);
     border-radius: 9px;
     opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
+    left: 0px;
     transition: 0.25s ease-in-out;
     &:nth-child(1) {
       top: 0px;
     }
     &:nth-child(2) {
       top: 18px;
+      width: 50%;
     }
     &:nth-child(3) {
       top: 36px;

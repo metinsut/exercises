@@ -43,8 +43,6 @@ export default {
     background-color: blue;
     li {
       display: inline-block;
-      // display: flex;
-      // align-items: center;
       padding: 0 30px;
       background-color: rgba(26, 188, 156,1.0);
       &:after {

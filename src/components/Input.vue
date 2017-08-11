@@ -2,7 +2,7 @@
   <div class="input">
     <v-header></v-header>
     <div class="wrapper">
-      <div class="area">
+      <div class="style1">
         <input type="text" name="" value="">
         <span></span>
       </div>
@@ -29,19 +29,27 @@ export default {
 
 .wrapper {
   height: 300px;
-  .area {
+  .style1 {
     input {
       display: inline-block;
-      height: 30px;
+      color: rgba(52, 73, 94,1.0);
+      height:50px;
+      width: 300px;
       border: none;
-      &:after {
-        display: block;
-        content: 'sadasd';
-        border-bottom: 3px solid rgba(192, 57, 43,1.0);
-        transform: scale(1);
+      &:focus {
+        outline: none;
+      }
+      &:focus:span {
+        transform: scalex(1);
       }
     }
-
+    span {
+      display: block;
+      content: 'asd';
+      border-bottom: 3px solid rgba(192, 57, 43,1.0);
+      transform: scalex(0);
+      transition: transform 500ms ease-in-out;
+    }
   }
 }
 </style>
