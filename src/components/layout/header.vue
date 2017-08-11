@@ -11,6 +11,8 @@
         <router-link class="transform" to="/transform">Transform</router-link>
         <router-link class="animatedIcon" to="/animatedicon">Animated Icons</router-link>
         <router-link class="borderEfect" to="/borderefect">Border Efect</router-link>
+        <router-link class="input" to="/input">Input</router-link>
+        <router-link class="borderEfect2" to="/borderefect2">BorderEfect2</router-link>
       </div>
     </div>
   </div>
@@ -28,10 +30,10 @@ export default {
   background-color: rgba(52, 73, 94,1.0);
   display: flex;
   align-items: center;
+  width: 100%;
   .area-1{
     display: flex;
     align-items: center;
-    margin: 15px;
     .links{
       display: flex;
       margin: 15px;

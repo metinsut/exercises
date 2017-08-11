@@ -8,6 +8,9 @@ import VueCss from '@/components/VueCss'
 import Transform from '@/components/Transform'
 import AnimatedIcon from '@/components/AnimatedIcon'
 import BorderEfect from '@/components/BorderEfect'
+import Fixed from '@/components/Fixed'
+import Input from '@/components/Input'
+import BorderEfect2 from '@/components/BorderEfect2'
 
 Vue.use(Router)
 
@@ -53,6 +56,21 @@ export default new Router({
       path: '/borderefect',
       name: 'BorderEfect',
       component: BorderEfect
+    },
+    {
+      path: '/fixed',
+      name: 'Fixed',
+      component: Fixed
+    },
+    {
+      path: '/input',
+      name: 'Input',
+      component: Input
+    },
+    {
+      path: '/borderefect2',
+      name: 'BorderEfect2',
+      component: BorderEfect2
     }
   ]
 })
