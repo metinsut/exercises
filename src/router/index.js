@@ -11,6 +11,7 @@ import BorderEfect from '@/components/BorderEfect'
 import Fixed from '@/components/Fixed'
 import Input from '@/components/Input'
 import BorderEfect2 from '@/components/BorderEfect2'
+import CheckBox from '@/components/checkbox'
 
 Vue.use(Router)
 
@@ -71,6 +72,11 @@ export default new Router({
       path: '/borderefect2',
       name: 'BorderEfect2',
       component: BorderEfect2
+    },
+    {
+      path: '/checkbox',
+      name: 'CheckBox',
+      component: CheckBox
     }
   ]
 })

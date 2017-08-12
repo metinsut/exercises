@@ -25,19 +25,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.wrapper{
-  width: 100%;
-  max-width: 1200px;
-  margin: 20px auto;
-    .container{
-      background-color: white;
-      height: 500px;
-      padding: 30px;
-      .ripple-button{
-        height: 200px;
-      }
-    }
-  }
+@import "../assets/common/common";
 
 button {
       font-family : inherit;

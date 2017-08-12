@@ -13,6 +13,7 @@
         <router-link class="borderEfect" to="/borderefect">Border Efect</router-link>
         <router-link class="input" to="/input">Input</router-link>
         <router-link class="borderEfect2" to="/borderefect2">BorderEfect2</router-link>
+        <router-link class="checkbox" to="/checkbox">Checkbox</router-link>
       </div>
     </div>
   </div>
