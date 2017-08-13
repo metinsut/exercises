@@ -35,6 +35,7 @@ export default {
 @import "../assets/common/common";
 
 .section {
+  color: #424242;
   display: flex;
   flex-direction: column;
   align-items: center;

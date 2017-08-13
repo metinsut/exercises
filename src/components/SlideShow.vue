@@ -1,0 +1,138 @@
+<template>
+  <div class="home">
+    <v-header></v-header>
+    <div class="wrapper">
+      <div class="sliderContainer">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="../assets/images/image1.jpg" style="width:50%">
+          <!-- <div class="image">
+          </div> -->
+          <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="../assets/images/image2.jpg" style="width:50%">
+          <!-- <div class="image">
+          </div> -->
+          <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="../assets/images/image3.jpg" style="width:50%">
+          <!-- <div class="image">
+          </div> -->
+          <div class="text">Caption Text</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+    </div>
+  </div>
+</template>
+
+<script>
+import header from '@/components/layout/header'
+export default {
+  name: 'home',
+  components: {'v-header':header},
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js App',
+      images: [
+        {
+          "img": "./assets/images/image1.jpg"
+        },
+        {
+          "img": "./assets/images/image2.jpg",
+        },
+        {
+          "img": "./assets/images/image3.jpg"
+        }
+      ]
+    }
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style lang="scss" scoped>
+@import "../assets/common/common";
+
+.wrapper {
+  position: relative;
+  .sliderContainer {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    .mySlides {
+      display: none;
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+    }
+    .dot {
+      cursor:pointer;
+      height: 13px;
+      width: 13px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    &.next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    &.prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+  }
+}
+
+
+</style>

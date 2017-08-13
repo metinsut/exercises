@@ -34,22 +34,17 @@ export default {
 .banner1{
   max-width: 1200px;
   background-color: rgba(189, 195, 199,1.0);
-  height: 80vh;
   margin: 0 auto;
   .wrapper{
-    width: 100%;
-    height: 100%;
+    height: 50vh;
     background-image: url("../assets/images/image1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size:contain;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    .text{
-      margin: 0 0 0 20%;
-    }
   }
 }
 .banner2{

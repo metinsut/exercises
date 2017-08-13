@@ -14,6 +14,7 @@
         <router-link class="input" to="/input">Input</router-link>
         <router-link class="borderEfect2" to="/borderefect2">BorderEfect2</router-link>
         <router-link class="checkbox" to="/checkbox">Checkbox</router-link>
+        <router-link class="slideshow" to="/slideshow">SlideShow</router-link>
       </div>
     </div>
   </div>
@@ -45,7 +46,7 @@ export default {
           margin: 15px;
           text-decoration: none;
           color: rgba(149, 165, 166,1.0);
-          font-size: 20px;
+          font-size: 13px;
           font-family: sans-serif;
         }
     }

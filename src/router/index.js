@@ -12,6 +12,7 @@ import Fixed from '@/components/Fixed'
 import Input from '@/components/Input'
 import BorderEfect2 from '@/components/BorderEfect2'
 import CheckBox from '@/components/checkbox'
+import SlideShow from '@/components/SlideShow'
 
 Vue.use(Router)
 
@@ -77,6 +78,11 @@ export default new Router({
       path: '/checkbox',
       name: 'CheckBox',
       component: CheckBox
+    },
+    {
+      path: '/slideshow',
+      name: 'SlideShow',
+      component: SlideShow
     }
   ]
 })

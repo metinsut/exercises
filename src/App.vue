@@ -11,20 +11,28 @@ export default {
 </script>
 
 <style lang="scss">
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('./assets/fonts/Roboto-Regular.eot');
+	src: url('./assets/fonts/Roboto-Regular.woff') format('woff'),
+		url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 *{
   margin: 0;
   padding: 0;
+  font-family: Roboto;
+  font-weight: 400;
 }
+
 body,html{
-  margin: 0;
-  padding: 0;
   background-color: white;
-  @font-face {
-	font-family: "roboto";
-	src: url("assets/fonts/Roboto-Medium.ttf") format("truetype")
-  }
-  font-family: roboto;
 }
+
 hr{
   width: 100%;
   height: 5px;
