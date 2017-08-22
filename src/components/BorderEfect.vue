@@ -15,7 +15,7 @@
       <div class="hoverperfect">
         <ul>
           <li class="isActive">Home</li>
-          <li>About</li>
+          <li><a href="#">About</a></li>
           <li>Contact</li>
         </ul>
       </div>
