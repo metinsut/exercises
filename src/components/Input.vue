@@ -45,7 +45,7 @@ export default {
     }
     span {
       display: block;
-      content: 'asd';
+      content: '';
       border-bottom: 3px solid rgba(192, 57, 43,1.0);
       transform: scalex(0);
       transition: transform 500ms ease-in-out;
