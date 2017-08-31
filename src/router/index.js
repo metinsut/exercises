@@ -11,7 +11,7 @@ import BorderEfect from '@/components/BorderEfect'
 import Fixed from '@/components/Fixed'
 import Input from '@/components/Input'
 import BorderEfect2 from '@/components/BorderEfect2'
-import CheckBox from '@/components/checkbox'
+import CheckBox from '@/components/CheckBox'
 import SlideShow from '@/components/SlideShow'
 import Select from '@/components/Select'
 

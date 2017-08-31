@@ -5,14 +5,11 @@
       <div class="row">
         <div class="selectGroup">
           <div class="input" v-on:click="on=!on">
-            <label for="">Select</label>
-            <div class="input-selection"></div>
+            <label>{{selected}}</label>
             <i class="fa fa-arrow-down" aria-hidden="true"></i>
             <div class="list" v-bind:class="{visible: on}">
-            <ul>
-              <li>Select 1</li>
-              <li>Select 2</li>
-              <li>Select 3</li>
+            <ul v-for="item in items">
+              <li v-on:click="changeSelected(this.event)">{{item}}</li>
             </ul>
           </div>
           </div>
@@ -32,7 +29,14 @@ export default {
   components: { 'v-header': header },
   data() {
     return {
-      on: false,
+      on: true,
+      items: ["Select1", "Select2", "Select3", "Select4", "Select5", "Select6"],
+      selected: "Select1"
+    }
+  },
+  methods: {
+    changeSelected(event) {
+      this.selected = event.target.innerHTML
     }
   }
 }
@@ -45,14 +49,12 @@ export default {
   .selectGroup {
     width: 300px;
     height: 100px;
-    background-color: rgba(231, 76, 60, 1.0);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 0 10px;
     .input {
       position: relative;
-      background-color: rgba(52, 152, 219, 1.0);
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -65,7 +67,6 @@ export default {
       }
     }
     .detail {
-      background-color: rgba(155, 89, 182, 1.0);
       width: 100%;
       height: 30px;
       display: flex;
@@ -76,17 +77,29 @@ export default {
       &.visible {
         display: none;
       }
-      display: flex;
-      justify-content: center;
       position: absolute;
       width: 100%;
-      background-color: rgba(26, 188, 156,1.0);
+      top: 0;
+      left: 0;
+      overflow: auto;
+      max-height: 200px;
+      background-color: rgba(236, 240, 241,1.0);
       ul {
         display: flex;
         flex-direction: column;
-        // width: 100%;
         list-style: none;
-        background-color: rgba(127, 140, 141, 1.0);
+        width: 100%;
+        li {
+          height: 30px;
+          width: 100%;
+          padding: 20px 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:hover {
+            background-color: rgba(149, 165, 166,1.0);
+          }
+        }
       }
     }
   }
