@@ -13,6 +13,7 @@ import Input from '@/components/Input'
 import BorderEfect2 from '@/components/BorderEfect2'
 import CheckBox from '@/components/checkbox'
 import SlideShow from '@/components/SlideShow'
+import Select from '@/components/Select'
 
 Vue.use(Router)
 
@@ -83,6 +84,11 @@ export default new Router({
       path: '/slideshow',
       name: 'SlideShow',
       component: SlideShow
+    },
+    {
+      path: '/select',
+      name: 'Select',
+      component: Select
     }
   ]
 })

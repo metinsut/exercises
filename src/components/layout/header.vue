@@ -15,6 +15,7 @@
         <router-link class="borderEfect2" to="/borderefect2">BorderEfect2</router-link>
         <router-link class="checkbox" to="/checkbox">Checkbox</router-link>
         <router-link class="slideshow" to="/slideshow">SlideShow</router-link>
+        <router-link class="select" to="/select">Select</router-link>
       </div>
     </div>
   </div>
