@@ -8,12 +8,12 @@
             <label>{{selected}}</label>
             <i class="fa fa-arrow-down" aria-hidden="true"></i>
             <div class="list" v-bind:class="{visible: on}">
-            <ul v-for="item in items">
-              <li v-on:click="changeSelected(this.event)">{{item}}</li>
-            </ul>
+              <ul v-for="item in items">
+                <li v-on:click="changeSelected(this.event)">{{item}}</li>
+              </ul>
+            </div>
           </div>
-          </div>
-          <div class="detail">
+          <div class="detail" id="mtn">
             <p>Please select for value.</p>
           </div>
         </div>
@@ -68,7 +68,7 @@ export default {
     }
     .detail {
       width: 100%;
-      height: 30px;
+      height: auto;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -83,7 +83,7 @@ export default {
       left: 0;
       overflow: auto;
       max-height: 200px;
-      background-color: rgba(236, 240, 241,1.0);
+      background-color: rgba(236, 240, 241, 1.0);
       ul {
         display: flex;
         flex-direction: column;
@@ -97,7 +97,10 @@ export default {
           align-items: center;
           justify-content: center;
           &:hover {
-            background-color: rgba(149, 165, 166,1.0);
+            background-color: rgba(149, 165, 166, 1.0);
+          }
+          &:active {
+            color: rgba(52, 152, 219,1.0);
           }
         }
       }
