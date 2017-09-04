@@ -14,8 +14,11 @@
         <router-link class="input" to="/input">Input</router-link>
         <router-link class="borderEfect2" to="/borderefect2">BorderEfect2</router-link>
         <router-link class="checkbox" to="/checkbox">Checkbox</router-link>
+        <router-link class="checkbox2" to="/checkbox2">Checkbox2</router-link>
         <router-link class="slideshow" to="/slideshow">SlideShow</router-link>
         <router-link class="select" to="/select">Select</router-link>
+        <router-link class="radio" to="/radio">Radio</router-link>
+        <router-link class="switches" to="/switches">Switches</router-link>
       </div>
     </div>
   </div>

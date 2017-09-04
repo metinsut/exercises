@@ -14,6 +14,9 @@ import BorderEfect2 from '@/components/BorderEfect2'
 import CheckBox from '@/components/CheckBox'
 import SlideShow from '@/components/SlideShow'
 import Select from '@/components/Select'
+import Radio from '@/components/Radio'
+import Checkbox2 from '@/components/Checkbox2'
+import Switches from '@/components/Switches'
 
 Vue.use(Router)
 
@@ -89,6 +92,21 @@ export default new Router({
       path: '/select',
       name: 'Select',
       component: Select
+    },
+    {
+      path: '/radio',
+      name: 'Radio',
+      component: Radio
+    },
+    {
+      path: '/checkbox2',
+      name: 'Checkbox2',
+      component: Checkbox2
+    },
+    {
+      path: '/switches',
+      name: 'Switches',
+      component: Switches
     }
   ]
 })

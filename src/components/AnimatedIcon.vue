@@ -1,24 +1,24 @@
 <template>
   <div class="animatedIcon">
     <v-header></v-header>
-      <div class="wrapper">
-        <div class="icons">
-          <div id="nav-icon1" v-bind:class="{open:isActive}" v-on:click="run">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-        <div class="icons">
-
-        </div>
-        <div class="icons">
-
-        </div>
-        <div class="icons">
-
+    <div class="wrapper">
+      <div class="icons">
+        <div id="nav-icon1" v-bind:class="{open:isActive}" v-on:click="run">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
+      <div class="icons">
+
+      </div>
+      <div class="icons">
+
+      </div>
+      <div class="icons">
+
+      </div>
+    </div>
   </div>
 </template>
 
@@ -26,14 +26,14 @@
 import header from '@/components/layout/header'
 export default {
   name: 'animatedIcon',
-  components: {'v-header':header},
-  data () {
+  components: { 'v-header': header },
+  data() {
     return {
       msg: 'Welcome to Your Vue.js App',
-      isActive:false,
+      isActive: false,
     }
   },
-  methods:{
+  methods: {
     run() {
       this.isActive = !this.isActive;
     }
@@ -49,7 +49,7 @@ export default {
   width: 60px;
   height: 45px;
   position: relative;
-  background-color: rgba(221, 109, 54,1.0);
+  background-color: rgba(221, 109, 54, 1.0);
   margin: 50px auto;
   transition: 0.5s ease-in-out;
   cursor: pointer;
@@ -62,7 +62,7 @@ export default {
     position: absolute;
     height: 9px;
     width: 100%;
-    background-color: rgba(52, 73, 94,1.0);
+    background-color: rgba(52, 73, 94, 1.0);
     border-radius: 9px;
     opacity: 1;
     left: 0px;

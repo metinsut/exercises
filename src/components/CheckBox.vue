@@ -2,6 +2,9 @@
   <div class="checkbox">
     <v-header></v-header>
     <div class="wrapper">
+      <h1>Checkbox With Svg Icons</h1>
+      <hr>
+      <br>
       <div class="section">
         <label>
           <input type="checkbox" name="check" v-model="value">
