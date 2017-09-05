@@ -50,7 +50,6 @@ input[type="text"] {
 .effect {
   border: 0;
   padding: 7px 0;
-  // border-bottom: 1px solid #ccc;
 }
 
 .effect~.focus-border {
@@ -60,28 +59,12 @@ input[type="text"] {
   width: 0;
   height: 2px;
   background-color: #3399FF;
-  transition: 1s;
-}
-
-.effect~.focus-border1 {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background-color: red;
-  transition: 1s;
+  transition: .5s;
 }
 
 .effect:focus~.focus-border {
-  width: 50%;
-  transition: 1s;
-  left: 50%;
-}
-
-.effect:focus~.focus-border1 {
-  width: 50%;
-  transition: 1s;
+  width: 100%;
+  transition: .5s;
   left: 0;
 }
 </style>

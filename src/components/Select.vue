@@ -53,6 +53,7 @@ export default {
     flex-direction: column;
     justify-content: space-between;
     padding: 0 10px;
+    background-color: rgba(127, 140, 141,1.0);
     .input {
       position: relative;
       display: flex;
