@@ -19,6 +19,7 @@ export default {
     },
     methods: {
         clickButton: (e) => {
+            
             var circle = document.createElement('div');
             this.appendChild(circle);
 
