@@ -17,6 +17,7 @@ import Select from '@/components/Select'
 import Radio from '@/components/Radio'
 import Checkbox2 from '@/components/Checkbox2'
 import Switches from '@/components/Switches'
+import WavesEffect from '@/components/WavesEffect'
 
 Vue.use(Router)
 
@@ -107,6 +108,11 @@ export default new Router({
       path: '/switches',
       name: 'Switches',
       component: Switches
+    },
+    {
+      path: '/wavesEffect',
+      name: 'WavesEffect',
+      component: WavesEffect
     }
   ]
 })
