@@ -12,7 +12,7 @@ import Fixed from '@/components/Fixed'
 import Input from '@/components/Input'
 import BorderEfect2 from '@/components/BorderEfect2'
 import CheckBox from '@/components/CheckBox'
-import SlideShow from '@/components/SlideShow'
+import Bordershapes from '@/components/Bordershapes'
 import Select from '@/components/Select'
 import Radio from '@/components/Radio'
 import Checkbox2 from '@/components/Checkbox2'
@@ -85,9 +85,9 @@ export default new Router({
       component: CheckBox
     },
     {
-      path: '/slideshow',
-      name: 'SlideShow',
-      component: SlideShow
+      path: '/bordershapes',
+      name: 'Bordershapes',
+      component: Bordershapes
     },
     {
       path: '/select',
